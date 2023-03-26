@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return GetMaterialApp(debugShowCheckedModeBanner: false,
       home: Authen(),
       theme: ThemeData(
         useMaterial3: true,
@@ -28,7 +28,6 @@ class MyApp extends StatelessWidget {
 class MyHttpOverride extends HttpOverrides {
   @override
   HttpClient createHttpClient(SecurityContext? context) {
-    // TODO: implement createHttpClient
     return super.createHttpClient(context)
       ..badCertificateCallback = (cert, host, port) => true;
   }

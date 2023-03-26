@@ -41,6 +41,8 @@ dependencies:
   rename: ^2.0.1
   get: ^4.6.5
   dio: ^5.0.3
+  geolocator: ^9.0.2
+  google_maps_flutter: ^2.2.5
 
 
 flutter_icons:
